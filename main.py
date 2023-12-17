@@ -31,4 +31,8 @@ while True:
     if event == sg.WIN_CLOSED:
         break
 
+    if event in theme_menu[1]:
+        window.close()
+        window = create_window(event)
+
 window.close()
